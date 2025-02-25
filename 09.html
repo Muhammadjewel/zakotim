@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css">
+  </head>
+  <body class="flex flex-col">
+    
+    <!-- CONTENT-WRAPPER -->
+    <div class="content-wrapper grow flex flex-col">
+      <!-- HEADER -->
+      <header class="flex">
+        <button type="button">
+          <span class="sr-only">Закрыть</span>
+          <img src="img/x.svg" alt="" width="32" height="32">
+        </button>
+        <button type="button">
+          <span class="sr-only">Назад</span>
+          <img src="img/back.svg" alt="" width="32" height="32">
+        </button>
+        <button class="ml-auto" type="button">
+          <span class="sr-only">Меню</span>
+          <img src="img/menu-burger.svg" alt="" width="32" height="32">
+        </button>
+      </header>
+
+      <!-- PAGE-CONTENT -->
+      <div class="grow py-[16px]">
+        <h2>
+          Кредиторская задолженность – суммы, взятые в долг
+          <button type="button">
+            <span class="sr-only">Информация</span>
+            <img src="img/question.svg" alt="" width="20" height="20">
+          </button>
+        </h2>
+        <p>Закят выплачивается с суммы, превышающей нисаб после вычета долгов, подлежащих погашению в ближайшие 12 месяцев.</p>
+
+        <form>
+          <div class="input-group">
+            <label for="loans-input">Займы (долги), взятые у третьих сторон - текущая часть</label>
+            <input type="number" id="loans-input" name="loans" placeholder="Введите сумму" required>
+          </div>
+        </form>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-summary">
+          <div>Общая сумма</div>
+          <strong>0 сум</strong>
+        </div>
+        <button>Продолжить</button>
+      </footer>
+    </div>
+
+    <!-- INFO-MODAL -->
+    <div class="modal">
+      <div class="modal-content">
+        <div>
+          <p>Долги, возникшие из-за покупок в рассрочку или займов, могут уменьшить сумму, облагаемую закятом. Вычитаются только те, которые подлежат погашению в ближайшие 12 месяцев.</p>
+          <p>Кредитные обязательства включают займы у банков, небанковских организаций и физических лиц, такие как: потребительские кредиты, ипотека, автокредиты, другие займы.</p>
+          <p>Из закятной базы исключается только основная сумма долга. Начисленные проценты (рибо) не уменьшают сумму, облагаемую закятом.</p>
+          <p>Пример: Если у вас рассрочка с ежемесячным платежом 100, то за 12 месяцев сумма составит 1200. Эта сумма может быть вычтена при расчете закята.</p>
+        </div>
+        <button type="button">
+          <span class="sr-only">Закрыть</span>
+          <img src="img/x.svg" alt="" width="24" height="24">
+        </button>
+        <button type="button">Понятно</button>
+      </div>
+    </div>
+      
+  </body>
+</html>

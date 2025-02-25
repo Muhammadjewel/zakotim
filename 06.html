@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css">
+  </head>
+  <body class="flex flex-col">
+    
+    <!-- CONTENT-WRAPPER -->
+    <div class="content-wrapper grow flex flex-col">
+      <!-- HEADER -->
+      <header class="flex">
+        <button type="button">
+          <span class="sr-only">Закрыть</span>
+          <img src="img/x.svg" alt="" width="32" height="32">
+        </button>
+        <button type="button">
+          <span class="sr-only">Назад</span>
+          <img src="img/back.svg" alt="" width="32" height="32">
+        </button>
+        <button class="ml-auto" type="button">
+          <span class="sr-only">Меню</span>
+          <img src="img/menu-burger.svg" alt="" width="32" height="32">
+        </button>
+      </header>
+
+      <!-- PAGE-CONTENT -->
+      <div class="grow py-[16px]">
+        <h2>
+          Долги и дебиторская задолженность
+          <button type="button">
+            <span class="sr-only">Информация</span>
+            <img src="img/question.svg" alt="" width="20" height="20">
+          </button>
+        </h2>
+        <p>Выданные другим долги (дебиторская задолженность) облагаются закятом, включая денежные займы и задолженность за проданные товары.</p>
+
+        <form>
+          <div class="input-group">
+            <label for="cash-input">Займы, выданные в денежной форме</label>
+            <input type="number" id="cash-input" name="cash" placeholder="Введите сумму" required>
+          </div>
+          <div class="input-group">
+            <label for="commercial-debts-input">Коммерческие долги</label>
+            <input type="number" id="commercial-debts-input" name="commercial-debts" placeholder="Введите сумму" required>
+          </div>
+          <div class="input-group">
+            <label for="overdue-debts-input">Просроченные и/или сомнительные долги</label>
+            <input type="number" id="overdue-debts-input" name="overdue-debts" placeholder="Введите сумму" required>
+          </div>
+        </form>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-summary">
+          <div>Общая сумма</div>
+          <strong>0 сум</strong>
+        </div>
+        <button>Продолжить</button>
+      </footer>
+    </div>
+
+    <!-- INFO-MODAL -->
+    <div class="modal">
+      <div class="modal-content">
+        <div>
+          <p>Личные долги указывайте здесь, бизнес-задолженность — в разделе «Бизнес».</p>
+          <p>Если должник платежеспособен, закят выплачивается ежегодно. Если у него трудности, можно платить ежегодно с долга или после возврата — за прошедшие годы.</p>
+          <p>Если долг безнадежен или заемщик его отрицает без доказательств, закят не выплачивается. Если долг возвращен, закят начисляется только за год получения.Закят взимается с долгов за проданные товары и услуги, но не с долгов за личные вещи и аренду.</p>
+        </div>
+        <button type="button">
+          <span class="sr-only">Закрыть</span>
+          <img src="img/x.svg" alt="" width="24" height="24">
+        </button>
+        <button type="button">Понятно</button>
+      </div>
+    </div>
+      
+  </body>
+</html>

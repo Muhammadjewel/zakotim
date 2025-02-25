@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css">
+  </head>
+  <body class="flex flex-col">
+    
+    <!-- CONTENT-WRAPPER -->
+    <div class="content-wrapper grow flex flex-col">
+      <!-- HEADER -->
+      <header class="flex">
+        <button type="button">
+          <span class="sr-only">Закрыть</span>
+          <img src="img/x.svg" alt="" width="32" height="32">
+        </button>
+        <button type="button">
+          <span class="sr-only">Назад</span>
+          <img src="img/back.svg" alt="" width="32" height="32">
+        </button>
+        <button class="ml-auto" type="button">
+          <span class="sr-only">Меню</span>
+          <img src="img/menu-burger.svg" alt="" width="32" height="32">
+        </button>
+      </header>
+
+      <!-- PAGE-CONTENT -->
+      <div class="grow py-[16px]">
+        <h2>
+          Долги перед банками, финансовыми учреждениями и организациями, торгующими в рассрочку – текущая часть
+        </h2>
+
+        <form>
+          <div class="input-group">
+            <label for="ipoteka-input">Ипотечный кредит или его альтернатива</label>
+            <input type="number" id="ipoteka-input" name="ipoteka" placeholder="Введите сумму" required>
+          </div>
+          <div class="input-group">
+            <label for="auto-input">Автокредит или его альтернатива</label>
+            <input type="number" id="auto-input" name="auto" placeholder="Введите сумму" required>
+          </div>
+          <div class="input-group">
+            <label for="consumer-input">Потребительский кредит или его альтернатива</label>
+            <input type="number" id="consumer-input" name="consumer" placeholder="Введите сумму" required>
+          </div>
+          <div class="input-group">
+            <label for="other-input">Прочие долги</label>
+            <input type="number" id="other-input" name="other" placeholder="Введите сумму" required>
+          </div>
+        </form>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-summary">
+          <div>Общая сумма</div>
+          <strong>0 сум</strong>
+        </div>
+        <button>Продолжить</button>
+      </footer>
+    </div>
+
+      
+  </body>
+</html>

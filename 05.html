@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css">
+  </head>
+  <body class="flex flex-col">
+    
+    <!-- CONTENT-WRAPPER -->
+    <div class="content-wrapper grow flex flex-col">
+      <!-- HEADER -->
+      <header class="flex">
+        <button type="button">
+          <span class="sr-only">Закрыть</span>
+          <img src="img/x.svg" alt="" width="32" height="32">
+        </button>
+        <button type="button">
+          <span class="sr-only">Назад</span>
+          <img src="img/back.svg" alt="" width="32" height="32">
+        </button>
+        <button class="ml-auto" type="button">
+          <span class="sr-only">Меню</span>
+          <img src="img/menu-burger.svg" alt="" width="32" height="32">
+        </button>
+      </header>
+
+      <!-- PAGE-CONTENT -->
+      <div class="grow py-[16px]">
+        <h2>Серебро и золото</h2>
+        <p>Введите вес вашего золота и серебра в граммах.</p>
+
+        <form>
+          <div class="input-group">
+            <label for="silver-input"><strong>Серебро</strong> (грамм)</label>
+            <input type="number" id="silver-input" name="silver" placeholder="Введите вес" required>
+            <div>
+              <div>
+                <span>Цена за 1 грамм серебра</span>
+                <span>9 750 сум</span>
+              </div>
+              <div>0 сум</div>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="gold-input"><strong>Золото</strong> (грамм)</label>
+            <input type="number" id="gold-input" name="gold" placeholder="Введите вес" required>
+            <div>
+              <div>
+                <span>Цена за 1 грамм золота</span>
+                <span>470 588 с</span>
+              </div>ум
+              <div>0 сум</div>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+
+
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-summary">
+          <div>Общая сумма</div>
+          <strong>0 сум</strong>
+        </div>
+        <button>Продолжить</button>
+      </footer>
+    </div>
+      
+  </body>
+</html>

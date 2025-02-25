@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css">
+  </head>
+  <body class="flex flex-col">
+    
+    <!-- CONTENT-WRAPPER -->
+    <div class="content-wrapper grow flex flex-col">
+      <!-- HEADER -->
+      <header class="flex">
+        <button type="button">
+          <span class="sr-only">Закрыть</span>
+          <img src="img/x.svg" alt="" width="32" height="32">
+        </button>
+        <button type="button">
+          <span class="sr-only">Назад</span>
+          <img src="img/back.svg" alt="" width="32" height="32">
+        </button>
+        <button class="ml-auto" type="button">
+          <span class="sr-only">Меню</span>
+          <img src="img/menu-burger.svg" alt="" width="32" height="32">
+        </button>
+      </header>
+
+      <!-- PAGE-CONTENT -->
+      <div class="grow py-[16px]">
+        <h2>
+          Недвижимое имущество
+          <button type="button">
+            <span class="sr-only">Информация</span>
+            <img src="img/question.svg" alt="" width="20" height="20">
+          </button>
+        </h2>
+        <p>Недвижимость не облагается закятом, если не предназначена для продажи.</p>
+
+        <form>
+          <div class="input-group">
+            <label for="retrade-input">Недвижимость для перепродажи</label>
+            <input type="number" id="retrade-input" name="retrade" placeholder="Введите сумму" required>
+          </div>
+          <div class="input-group">
+            <label for="personal-input">Недвижимость для личных нужд или сдачи в аренду</label>
+            <input type="number" id="personal-input" name="personal" placeholder="Введите сумму" required>
+          </div>
+          <div class="input-group">
+            <label for="building-input">Недвижимость на стадии строительства для продажи</label>
+            <input type="number" id="building-input" name="building" placeholder="Введите сумму" required>
+          </div>
+          <div class="input-group">
+            <label for="hide-input">Недвижимость, скрывающая закят</label>
+            <input type="number" id="hide-input" name="hide" placeholder="Введите сумму" required>
+          </div>
+        </form>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-summary">
+          <div>Общая сумма</div>
+          <strong>0 сум</strong>
+        </div>
+        <button>Продолжить</button>
+      </footer>
+    </div>
+
+    <!-- INFO-MODAL -->
+    <div class="modal">
+      <div class="modal-content">
+        <div>
+          <p>Если недвижимость приобретена без четкого намерения продажи или использования, закят с нее не выплачивается.</p>
+          <p>Торговой считается недвижимость, купленная для перепродажи с целью получения прибыли. Однако само по себе намерение продажи не делает имущество торговым. Оно может быть продано по разным причинам: для покупки другого объекта, из-за финансовых трудностей или смены планов.</p>
+          <p>Если на дату расчета закята недвижимость не была четко предназначена для торговли, закят с нее не выплачивается.</p>
+        </div>
+        <button type="button">
+          <span class="sr-only">Закрыть</span>
+          <img src="img/x.svg" alt="" width="24" height="24">
+        </button>
+        <button type="button">Понятно</button>
+      </div>
+    </div>
+      
+  </body>
+</html>
