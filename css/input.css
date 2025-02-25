@@ -5,7 +5,12 @@ html, body {
 }
 
 body {
+  padding-top: 32px;
   background-color: #EBF0F5;
+}
+
+button {
+  cursor: pointer;
 }
 
 .content-wrapper {
@@ -14,6 +19,40 @@ body {
   padding: 8px 16px 16px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.header {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.header-inner {
+  width: 100%;
+  max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header--inner {
+  background-color: #EBF0F5;
+}
+
+.header-button-close,
+.header-button-back {
+  display: none;
+}
+
+.header--index .header-button-close {
+  display: block;
+}
+
+.header--inner .header-button-back {
+  display: block;
 }
 
 /* Euclid Circular A

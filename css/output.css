@@ -176,9 +176,6 @@
     white-space: nowrap;
     border-width: 0;
   }
-  .left-6 {
-    left: calc(var(--spacing) * 6);
-  }
   .ml-auto {
     margin-left: auto;
   }
@@ -194,24 +191,15 @@
   .flex-col {
     flex-direction: column;
   }
+  .items-center {
+    align-items: center;
+  }
   .py-\[16px\] {
     padding-block: 16px;
   }
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
-  .leading-6 {
-    --tw-leading: calc(var(--spacing) * 6);
-    line-height: calc(var(--spacing) * 6);
-  }
-  .leading-9 {
-    --tw-leading: calc(var(--spacing) * 9);
-    line-height: calc(var(--spacing) * 9);
-  }
-  .leading-12 {
-    --tw-leading: calc(var(--spacing) * 12);
-    line-height: calc(var(--spacing) * 12);
   }
   .leading-15 {
     --tw-leading: calc(var(--spacing) * 15);
@@ -222,7 +210,11 @@ html, body {
   height: 100%;
 }
 body {
+  padding-top: 32px;
   background-color: #EBF0F5;
+}
+button {
+  cursor: pointer;
 }
 .content-wrapper {
   width: 100%;
@@ -230,6 +222,33 @@ body {
   padding: 8px 16px 16px;
   margin-left: auto;
   margin-right: auto;
+}
+.header {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.header-inner {
+  width: 100%;
+  max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header--inner {
+  background-color: #EBF0F5;
+}
+.header-button-close, .header-button-back {
+  display: none;
+}
+.header--index .header-button-close {
+  display: block;
+}
+.header--inner .header-button-back {
+  display: block;
 }
 @property --tw-rotate-x {
   syntax: "*";
