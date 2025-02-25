@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css">
+  </head>
+  <body class="flex flex-col">
+    
+    <!-- CONTENT-WRAPPER -->
+    <div class="content-wrapper grow flex flex-col">
+      <!-- HEADER -->
+      <header class="flex">
+        <button type="button">
+          <span class="sr-only">Закрыть</span>
+          <img src="img/x.svg" alt="" width="32" height="32">
+        </button>
+        <button type="button">
+          <span class="sr-only">Назад</span>
+          <img src="img/back.svg" alt="" width="32" height="32">
+        </button>
+        <button class="ml-auto" type="button">
+          <span class="sr-only">Меню</span>
+          <img src="img/menu-burger.svg" alt="" width="32" height="32">
+        </button>
+      </header>
+
+      <!-- PAGE-CONTENT -->
+      <div class="grow py-[16px]">
+        <h2>Выберите соответствующие статьи активов и долгов, которыми вы владеете</h2>
+
+        <form>
+          <div class="input-group">
+            <label class="custom-checkbox">
+              <input class="custom-checkbox-input" type="checkbox" name="income_sources" value="money" checked>
+              <span class="custom-checkbox-control">
+                <span class="custom-checkbox-text">Денежные средства - личные</span>
+                <span class="custom-checkbox-icon"></span>
+              </span>
+            </label>
+          </div>
+
+          <div class="input-group">
+            <label class="custom-checkbox">
+              <input class="custom-checkbox-input" type="checkbox" name="income_sources" value="gold_silver">
+              <span class="custom-checkbox-control">
+                <span class="custom-checkbox-text">Золото и серебро</span>
+                <span class="custom-checkbox-icon"></span>
+              </span>
+            </label>
+          </div>
+
+          <div class="input-group">
+            <label class="custom-checkbox">
+              <input class="custom-checkbox-input" type="checkbox" name="income_sources" value="loans">
+              <span class="custom-checkbox-control">
+                <span class="custom-checkbox-text">Личные долги данные третьим лицам</span>
+                <span class="custom-checkbox-icon"></span>
+              </span>
+            </label>
+          </div>
+
+          <div class="input-group">
+            <label class="custom-checkbox">
+              <input class="custom-checkbox-input" type="checkbox" name="income_sources" value="stock">
+              <span class="custom-checkbox-control">
+                <span class="custom-checkbox-text">Акции и инвестиции</span>
+                <span class="custom-checkbox-icon"></span>
+              </span>
+            </label>
+          </div>
+
+          <div class="input-group">
+            <label class="custom-checkbox">
+              <input class="custom-checkbox-input" type="checkbox" name="income_sources" value="real_estate">
+              <span class="custom-checkbox-control">
+                <span class="custom-checkbox-text">Недвижимое имущество</span>
+                <span class="custom-checkbox-icon"></span>
+              </span>
+            </label>
+          </div>
+
+          <div class="input-group">
+            <label class="custom-checkbox">
+              <input class="custom-checkbox-input" type="checkbox" name="income_sources" value="debts">
+              <span class="custom-checkbox-control">
+                <span class="custom-checkbox-text">Ваши долги перед третьими лицами</span>
+                <span class="custom-checkbox-icon"></span>
+              </span>
+            </label>
+          </div>
+
+          <div class="input-group">
+            <label class="custom-checkbox">
+              <input class="custom-checkbox-input" type="checkbox" name="income_sources" value="business">
+              <span class="custom-checkbox-control">
+                <span class="custom-checkbox-text">Бизнес</span>
+                <span class="custom-checkbox-icon"></span>
+              </span>
+            </label>
+          </div>
+
+          <div class="input-group">
+            <label class="custom-checkbox">
+              <input class="custom-checkbox-input" type="checkbox" name="income_sources" value="animals">
+              <span class="custom-checkbox-control">
+                <span class="custom-checkbox-text">Животноводство</span>
+                <span class="custom-checkbox-icon"></span>
+              </span>
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <button>Продолжить</button>
+      </footer>
+    </div>
+      
+  </body>
+</html>
