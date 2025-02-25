@@ -11,12 +11,12 @@
     <div class="content-wrapper grow flex flex-col">
       <!-- HEADER -->
       <header class="header header--inner">
-        <div class="header-inner flex items-center">
-          <button class="header-button-close" type="button">
+        <div class="header__inner flex items-center">
+          <button class="header__button-close" type="button">
             <span class="sr-only">Закрыть</span>
             <img src="img/x.svg" alt="" width="32" height="32">
           </button>
-          <button class="header-button-back" type="button">
+          <button class="header__button-back" type="button">
             <span class="sr-only">Назад</span>
             <img src="img/back.svg" alt="" width="32" height="32">
           </button>
@@ -36,12 +36,12 @@
 
         <form>
           <div class="input-group">
-            <label for="cow-price-input">Текущая рыночная цена овец, коров и быков, лошадей, коз, верблюдов, кур и т. п.</label>
-            <input type="number" id="cow-price-input" name="cow_price" placeholder="Введите сумму" required>
+            <label class="input-group__label" for="cow-price-input">Текущая рыночная цена овец, коров и быков, лошадей, коз, верблюдов, кур и т. п.</label>
+            <input class="form-control" type="number" id="cow-price-input" name="cow_price" placeholder="Введите сумму" required>
           </div>
           <div class="input-group">
-            <label for="poultry-input">Текущая рыночная цена домашней птицы</label>
-            <input type="number" id="poultry-input" name="poultry" placeholder="Введите сумму" required>
+            <label class="input-group__label" for="poultry-input">Текущая рыночная цена домашней птицы</label>
+            <input class="form-control" type="number" id="poultry-input" name="poultry" placeholder="Введите сумму" required>
           </div>
         </form>
       </div>
@@ -50,9 +50,9 @@
       <footer>
         <div class="footer-summary">
           <div>Общая сумма</div>
-          <strong>0 сум</strong>
+          <strong class="text-primary">0 сум</strong>
         </div>
-        <a href="13.html">Продолжить</a>
+        <a class="primary-button" href="13.html">Продолжить</a>
       </footer>
     </div>
 
@@ -79,12 +79,12 @@
         <h2>Присоединиться к проекту</h2>
         <form>
           <div class="input-group">
-            <label for="name-input">Как вам обращаться</label>
-            <input type="text" id="name-input" name="name" placeholder="Введите ФИО" required>
+            <label class="input-group__label" for="name-input">Как вам обращаться</label>
+            <input class="form-control" type="text" id="name-input" name="name" placeholder="Введите ФИО" required>
           </div>
           <div class="input-group">
-            <label for="phone-input">Номер телефона</label>
-            <input type="tel" id="phone-input" name="phone" placeholder="+998" value="+998" required>
+            <label class="input-group__label" for="phone-input">Номер телефона</label>
+            <input class="form-control" type="tel" id="phone-input" name="phone" placeholder="+998" value="+998" required>
           </div>
           <button type="submit">Присоединиться</button>
         </form>

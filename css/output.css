@@ -206,6 +206,12 @@
     line-height: calc(var(--spacing) * 15);
   }
 }
+:root {
+  --primary-color: #0077FF;
+  --black-color: #000;
+  --grey-color: #4D4D4D;
+  --border-color: #B0B4B8;
+}
 html, body {
   height: 100%;
 }
@@ -213,8 +219,19 @@ body {
   padding-top: 32px;
   background-color: #EBF0F5;
 }
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--black-color);
+}
+p:not(:last-child) {
+  margin-bottom: 16px;
+}
 button {
   cursor: pointer;
+}
+input {
+  width: 100%;
 }
 .content-wrapper {
   width: 100%;
@@ -230,7 +247,7 @@ button {
   top: 0;
   width: 100%;
 }
-.header-inner {
+.header__inner {
   width: 100%;
   max-width: 375px;
   padding-left: 16px;
@@ -241,14 +258,49 @@ button {
 .header--inner {
   background-color: #EBF0F5;
 }
-.header-button-close, .header-button-back {
+.header__button-close, .header__button-back {
   display: none;
 }
-.header--index .header-button-close {
+.header--index .header__button-close {
   display: block;
 }
-.header--inner .header-button-back {
+.header--inner .header__button-back {
   display: block;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.input-group__label {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.input-group__label--big {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: #fff;
+  color: var(--black-color);
+}
+.primary-button {
+  display: block;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 500;
+  text-align: center;
+}
+.text-primary {
+  color: var(--primary-color);
 }
 @property --tw-rotate-x {
   syntax: "*";
