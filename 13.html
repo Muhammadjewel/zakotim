@@ -27,45 +27,51 @@
 
       <!-- PAGE-CONTENT -->
       <div class="grow py-[16px]">
-        <h2>Серебро и золото</h2>
-        <p>Введите вес вашего золота и серебра в граммах.</p>
+        <h2>
+          Итоговый расчет
+        </h2>
+        
+        <section>
+          <h2>Имущество, подлежащее закяту</h2>
+          <dl>
+            <dt>Золото и серебро </dt>
+            <dd>10 000 000 сум</dd>
+            <dt>Денежные средства – личные</dt>
+            <dd>50 000 000 сум</dd>
+            <dt>Личные долги данные третьим лицам</dt>
+            <dd>5 000 000 сум</dd>
+            <dt>Акции и инвестиции</dt>
+            <dd>15 000 000 сум</dd>
+          </dl>
+        </section>
 
-        <form>
-          <div class="input-group">
-            <label for="silver-input"><strong>Серебро</strong> (грамм)</label>
-            <input type="number" id="silver-input" name="silver" placeholder="Введите вес" required>
-            <div>
-              <div>
-                <span>Цена за 1 грамм серебра</span>
-                <span>9 750 сум</span>
-              </div>
-              <div>0 сум</div>
-            </div>
-          </div>
-          <div class="input-group">
-            <label for="gold-input"><strong>Золото</strong> (грамм)</label>
-            <input type="number" id="gold-input" name="gold" placeholder="Введите вес" required>
-            <div>
-              <div>
-                <span>Цена за 1 грамм золота</span>
-                <span>470 588 с</span>
-              </div>ум
-              <div>0 сум</div>
-            </div>
-          </div>
-        </form>
+        <section>
+          <h2>Формула расчета закята:</h2>
+          <p>(“Мое состояние” − “Мои долги”)×2.5%</p>
+        </section>
+
+        <section>
+          <h2>Общая сумма для расчета закята</h2>
+          <dl>
+            <dt>Общая сумма состояния, подлежащего закяту:</dt>
+            <dd>80 000 000 сум</dd>
+            <dt>Общая сумма долгов, подлежащих вычету:</dt>
+            <dd>10 000 000 сум</dd>
+            <dt>Чистая сумма состояния для расчета закята</dt>
+            <dd>70 000 000 сум</dd>
+          </dl>
+        </section>
+
+        <section>
+          <h2>Сумма закята</h2>
+          <p>Ваше богатство не достигло суммы нисаба, в настоящее время сумма нисаба составляет:</p>
+          <strong>1 750 000 сум</strong>
+        </section>
       </div>
-      
-
-
 
       <!-- FOOTER -->
       <footer>
-        <div class="footer-summary">
-          <div>Общая сумма</div>
-          <strong>0 сум</strong>
-        </div>
-        <button>Продолжить</button>
+        <button>Поддержать нуждающихся</button>
       </footer>
     </div>
 
@@ -103,6 +109,7 @@
         </form>
       </div>
     </div>
+
       
   </body>
 </html>
