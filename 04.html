@@ -35,19 +35,19 @@
         <form>
           <div class="input-group">
             <label class="input-group__label" for="cash-input">Наличные деньги</label>
-            <input class="form-control" type="number" id="cash-input" name="cash" placeholder="Введите сумму" required>
+            <input class="form-control" type="number" min="0" id="cash-input" name="cash" placeholder="Введите сумму" required>
           </div>
           <div class="input-group">
             <label class="input-group__label" for="card-input">Деньги на пластиковых картах</label>
-            <input class="form-control" type="number" id="card-input" name="card" placeholder="Введите сумму" required>
+            <input class="form-control" type="number" min="0" id="card-input" name="card" placeholder="Введите сумму" required>
           </div>
           <div class="input-group">
             <label class="input-group__label" for="accounts-input">Текущие счета</label>
-            <input class="form-control" type="number" id="accounts-input" name="accounts" placeholder="Введите сумму" required>
+            <input class="form-control" type="number" min="0" id="accounts-input" name="accounts" placeholder="Введите сумму" required>
           </div>
           <div class="input-group">
             <label class="input-group__label" for="deposits-input">Депозиты, сбережения и другие вклады</label>
-            <input class="form-control" type="number" id="deposits-input" name="deposits" placeholder="Введите сумму" required>
+            <input class="form-control" type="number" min="0" id="deposits-input" name="deposits" placeholder="Введите сумму" required>
           </div>
         </form>
       </div>

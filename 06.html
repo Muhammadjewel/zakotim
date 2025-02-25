@@ -41,15 +41,15 @@
         <form>
           <div class="input-group">
             <label class="input-group__label" for="cash-input">Займы, выданные в денежной форме</label>
-            <input class="form-control" type="number" id="cash-input" name="cash" placeholder="Введите сумму" required>
+            <input class="form-control" type="number" min="0" id="cash-input" name="cash" placeholder="Введите сумму" required>
           </div>
           <div class="input-group">
             <label class="input-group__label" for="commercial-debts-input">Коммерческие долги</label>
-            <input class="form-control" type="number" id="commercial-debts-input" name="commercial-debts" placeholder="Введите сумму" required>
+            <input class="form-control" type="number" min="0" id="commercial-debts-input" name="commercial-debts" placeholder="Введите сумму" required>
           </div>
           <div class="input-group">
             <label class="input-group__label" for="overdue-debts-input">Просроченные и/или сомнительные долги</label>
-            <input class="form-control" type="number" id="overdue-debts-input" name="overdue-debts" placeholder="Введите сумму" required>
+            <input class="form-control" type="number" min="0" id="overdue-debts-input" name="overdue-debts" placeholder="Введите сумму" required>
           </div>
         </form>
       </div>
