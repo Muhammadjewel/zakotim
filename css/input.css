@@ -138,6 +138,23 @@ input {
 }
 
 
+/* HEADINGS */
+.h2 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #000;
+}
+
+
+/* FORM */
+.form {
+  display: grid;
+  gap: 16px;
+}
+
+
 /* INPUT-GROUP */
 .input-group {
   display: flex;
@@ -146,6 +163,7 @@ input {
 }
 
 .input-group__label {
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.5;
 }
