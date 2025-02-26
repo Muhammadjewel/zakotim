@@ -138,13 +138,22 @@ input {
 }
 
 
-/* HEADINGS */
+/* TEXT */
 .h2 {
   margin-bottom: 8px;
   font-size: 24px;
   line-height: 1.3;
   font-weight: 600;
   color: #000;
+}
+
+.index-paragraph {
+  font-weight: 300;
+  color: var(--grey-color);
+}
+
+.index-paragraph strong {
+  font-weight: 600;
 }
 
 

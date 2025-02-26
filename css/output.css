@@ -9,6 +9,7 @@
     --spacing: 0.25rem;
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
+    --font-weight-semibold: 600;
     --default-font-family: var(--font-sans);
     --default-font-feature-settings: var(--font-sans--font-feature-settings);
     --default-font-variation-settings: var(
@@ -176,6 +177,9 @@
     white-space: nowrap;
     border-width: 0;
   }
+  .mb-\[24px\] {
+    margin-bottom: 24px;
+  }
   .ml-auto {
     margin-left: auto;
   }
@@ -204,6 +208,10 @@
   .leading-15 {
     --tw-leading: calc(var(--spacing) * 15);
     line-height: calc(var(--spacing) * 15);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
 }
 :root {
@@ -319,6 +327,13 @@ input {
   font-weight: 600;
   color: #000;
 }
+.index-paragraph {
+  font-weight: 300;
+  color: var(--grey-color);
+}
+.index-paragraph strong {
+  font-weight: 600;
+}
 .form {
   display: grid;
   gap: 16px;
@@ -392,6 +407,10 @@ input {
   initial-value: skewY(0);
 }
 @property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
