@@ -154,6 +154,11 @@ input {
   color: #000;
 }
 
+.h2--small {
+  font-size: 18px;
+  line-height: 1.3;
+}
+
 .index-paragraph {
   font-weight: 300;
   color: var(--grey-color);
