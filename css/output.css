@@ -179,9 +179,6 @@
     white-space: nowrap;
     border-width: 0;
   }
-  .mb-0 {
-    margin-bottom: calc(var(--spacing) * 0);
-  }
   .mb-\[24px\] {
     margin-bottom: 24px;
   }
@@ -224,7 +221,7 @@
   }
 }
 :root {
-  --primary-color: #0077FF;
+  --primary-color: green;
   --black-color: #000;
   --grey-color: #4D4D4D;
   --border-color: #B0B4B8;
