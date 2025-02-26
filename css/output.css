@@ -230,6 +230,8 @@ html, body {
 body {
   padding-top: 32px;
   background-color: #EBF0F5;
+  font-family: 'Euclid Circular A', var(--font-sans), sans-serif;
+  font-weight: 400;
 }
 p {
   font-size: 16px;
