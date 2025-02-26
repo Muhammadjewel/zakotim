@@ -7,6 +7,12 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --spacing: 0.25rem;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-semibold: 600;
@@ -201,9 +207,21 @@
   .py-\[16px\] {
     padding-block: 16px;
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .leading-15 {
     --tw-leading: calc(var(--spacing) * 15);
@@ -526,6 +544,33 @@ input {
 .businesses-info-wrapper {
   display: grid;
   gap: 16px;
+}
+.report-info-wrapper {
+  display: grid;
+  gap: 24px;
+}
+.card {
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.card__dl {
+  display: grid;
+  gap: 12px;
+}
+.card__dl-item {
+  display: grid;
+  gap: 8px;
+}
+.card__dt {
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.card__dd {
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 500;
 }
 .primary-button {
   display: block;
