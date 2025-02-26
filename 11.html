@@ -33,117 +33,128 @@
       <h2 class="h2">Активы бизнеса</h2>
       <p>Ваш бизнес облагается закятом, кроме основных и долгосрочных активов. Укажите каждый бизнес отдельно, введя активы, обязательства и свою долю, чтобы рассчитать закят.</p>
       
-      <!-- TABS -->
-      <div>
-        <div>
-          <button type="button">1-бизнес</button>
-          <button type="button">2-бизнес</button>
-        </div>
-        <button type="button">
-          <span>Добавить бизнес</span>
-          <img src="img/plus-circle.svg" alt="" width="28" height="28">
-        </button>
-      </div>
-      
-      <!-- TAB-CONTENT -->
-      <div>
-        <!-- TAB-PANE -->
-        <div>
-          <form class="form">
-            <fieldset>
-              <legend class="sr-only">1-бизнес</legend>
-              <div class="input-group">
-                <label class="input-group__label" for="name-input">Наименования бизнеса</label>
-                <input class="form-control" type="text" id="name-input" name="name" placeholder="Наименования бизнеса" required>
-              </div>
-              <div class="input-group">
-                <label class="input-group__label" for="share-input">Ваша доля в бизнесе (%)</label>
-                <input class="form-control" type="number" min="0" id="share-input" name="share" placeholder="Введите долю" required>
-              </div>
-            </fieldset>
-            
-            <fieldset>
-              <legend>Денежные средства бизнеса</legend>
-              <div class="input-groups-row">
-                <div class="input-group">
-                  <label class="input-group__label" for="cash-input">Наличные деньги</label>
-                  <input class="form-control" type="number" min="0" id="cash-input" name="cash" placeholder="Введите сумму" required>
-                </div>
-                <div class="input-group">
-                  <label class="input-group__label" for="bank-account-input">Деньги в банке</label>
-                  <input class="form-control" type="number" min="0" id="bank-account-input" name="bank-account" placeholder="Введите сумму" required>
-                </div>
-              </div>
-            </fieldset>
-            
-            <fieldset>
-              <legend>Денежные средства бизнеса</legend>
-              <div class="input-groups-row">
-                <div class="input-group">
-                  <label class="input-group__label" for="goods-in-store-input">Товары на складе</label>
-                  <input class="form-control" type="number" min="0" id="goods-in-store-input" name="goods_in_store" placeholder="Введите сумму" required>
-                </div>
-                <div class="input-group">
-                  <label class="input-group__label" for="goods-on-road-input">Товары в пути</label>
-                  <input class="form-control" type="number" min="0" id="goods-on-road-input" name="goods_on_road" placeholder="Введите сумму" required>
-                </div>
-              </div>
-              <div class="input-group">
-                <label class="input-group__label" for="raw-goods-input">Полуфабрикаты/незавершенная продукция</label>
-                <input class="form-control" type="number" min="0" id="raw-goods-input" name="raw_goods_input" placeholder="Введите сумму" required>
-              </div>
-              <div class="input-group">
-                <label class="input-group__label" for="raw-materials-input">Сырьё на складе</label>
-                <input class="form-control" type="number" min="0" id="raw-materials-input" name="raw_materials_input" placeholder="Введите сумму" required>
-              </div>
-            </fieldset>
-            
-            <fieldset>
-              <legend>Дебиторская задолженность - деньги к получению от клиентов</legend>
-              <p>Дебиторская задолженность облагается закятом. Закят можно платить ежегодно с ожидаемой суммы или при возврате долга за все годы. Безнадежные долги не облагаются, но при возврате закят выплачивается только за этот год.</p>
-              <div class="input-groups-row">
-                <div class="input-group">
-                  <label class="input-group__label" for="debit-debt-input">Дебиторская задолженность</label>
-                  <input class="form-control" type="number" min="0" id="debit-debt-input" name="debit_debt" placeholder="Введите сумму" required>
-                </div>
-                <div class="input-group">
-                  <label class="input-group__label" for="cash-debt-input">Займы, выданные в денежной форме</label>
-                  <input class="form-control" type="number" min="0" id="cash-debt-input" name="cash_debt" placeholder="Введите сумму" required>
-                </div>
-              </div>
-            </fieldset>
-            
-            <fieldset>
-              <legend>Инвестиции вашего бизнеса</legend>
-              <div class="input-group">
-                <label class="input-group__label" for="investments-input">Инвестиции, сделанные вашим бизнесом</label>
-                <input class="form-control" type="number" min="0" id="investments-input" name="investments" placeholder="Введите сумму" required>
-              </div>
-            </fieldset>
-            
-            <fieldset>
-              <legend>Долги бизнеса - кредиторская задолженность</legend>
-              <p>Некоторые долги уменьшают сумму, облагаемую закятом. Вычитаются только задолженности с наступившим сроком платежа или подлежащие выплате в течение 12 месяцев, включая долги перед поставщиками, банками, по налогам и зарплатам. Если долг превышает год, учитывается только часть на ближайшие 12 месяцев. Процентные платежи не уменьшают базу закята — только основная сумма долга.</p>
-              <div class="input-group">
-                <label class="input-group__label" for="goods-rawm-debts-input">Задолженность по товарам, сырью и услугам</label>
-                <input class="form-control" type="number" min="0" id="goods-rawm-debts-input" name="goods_rawm_debts" placeholder="Введите сумму" required>
-              </div>
-              <div class="input-group">
-                <label class="input-group__label" for="debt-investments-input">Долги, финансирование и привлеченные инвестиции</label>
-                <input class="form-control" type="number" min="0" id="debt-investments-input" name="debt_investments" placeholder="Введите сумму" required>
-              </div>
-              <div class="input-group">
-                <label class="input-group__label" for="tax-debts-input">Задолженность по налогам и обязательным платежам</label>
-                <input class="form-control" type="number" min="0" id="tax-debts-input" name="tax_debts" placeholder="Введите сумму" required>
-              </div>
-              <div class="input-group">
-                <label class="input-group__label" for="payroll-debts-input">Задолженность по зарплате и другим видам выплат сотрудникам</label>
-                <input class="form-control" type="number" min="0" id="payroll-debts-input" name="payroll_debts" placeholder="Введите сумму" required>
-              </div>
-            </fieldset>
-          </form>
+      <!-- BUSINESSES-INFO-WRAPPER -->
+      <div class="businesses-info-wrapper">
+        <!-- TABS -->
+        <div class="tabs">
+          <div class="tabs__inner">
+            <div class="tabs__list">
+              <button class="tabs__list-item" type="button">1-бизнес</button>
+              <button class="tabs__list-item tabs__list-item--active" type="button">2-бизнес</button>
+            </div>
+            <button class="tabs__new-tab-button" type="button">
+              <span class="tabs__new-tab-button-inner">
+                <span class="tabs__new-tab-button-text">Добавить бизнес</span>
+                <img class="tabs__new-tab-button-img" src="img/plus-circle.svg" alt="" width="24" height="24">
+              </span>
+            </button>
+          </div>
         </div>
         
+        <!-- TAB-CONTENT -->
+        <div>
+          <!-- TAB-PANE -->
+          <div>
+            <form class="form">
+              <section class="form__section">
+                <h3 class="sr-only">1-бизнес</h3>
+                <div class="input-group">
+                  <label class="input-group__label" for="name-input">Наименования бизнеса</label>
+                  <input class="form-control" type="text" id="name-input" name="name" placeholder="Наименования бизнеса" required>
+                </div>
+                <div class="input-group">
+                  <label class="input-group__label" for="share-input">Ваша доля в бизнесе (%)</label>
+                  <input class="form-control" type="number" min="0" id="share-input" name="share" placeholder="Введите долю" required>
+                </div>
+              </section>
+              
+              <section class="form__section">
+                <h3 class="form__section-heading h2--small">Денежные средства бизнеса</h3>
+                <div class="input-groups-row">
+                  <div class="input-group">
+                    <label class="input-group__label" for="cash-input">Наличные деньги</label>
+                    <input class="form-control" type="number" min="0" id="cash-input" name="cash" placeholder="Введите сумму" required>
+                  </div>
+                  <div class="input-group">
+                    <label class="input-group__label" for="bank-account-input">Деньги в банке</label>
+                    <input class="form-control" type="number" min="0" id="bank-account-input" name="bank-account" placeholder="Введите сумму" required>
+                  </div>
+                </div>
+              </section>
+              
+              <section class="form__section">
+                <h3 class="form__section-heading h2--small">Денежные средства бизнеса</h3>
+                <div class="input-groups-row">
+                  <div class="input-group">
+                    <label class="input-group__label" for="goods-in-store-input">Товары на складе</label>
+                    <input class="form-control" type="number" min="0" id="goods-in-store-input" name="goods_in_store" placeholder="Введите сумму" required>
+                  </div>
+                  <div class="input-group">
+                    <label class="input-group__label" for="goods-on-road-input">Товары в пути</label>
+                    <input class="form-control" type="number" min="0" id="goods-on-road-input" name="goods_on_road" placeholder="Введите сумму" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label class="input-group__label" for="raw-goods-input">Полуфабрикаты/незавершенная продукция</label>
+                  <input class="form-control" type="number" min="0" id="raw-goods-input" name="raw_goods_input" placeholder="Введите сумму" required>
+                </div>
+                <div class="input-group">
+                  <label class="input-group__label" for="raw-materials-input">Сырьё на складе</label>
+                  <input class="form-control" type="number" min="0" id="raw-materials-input" name="raw_materials_input" placeholder="Введите сумму" required>
+                </div>
+              </section>
+              
+              <section class="form__section">
+                <h3 class="form__section-heading h2--small">Дебиторская задолженность - деньги к получению от клиентов</h3>
+                <div class="form__section-description">
+                  <p>Дебиторская задолженность облагается закятом. Закят можно платить ежегодно с ожидаемой суммы или при возврате долга за все годы. Безнадежные долги не облагаются, но при возврате закят выплачивается только за этот год.</p>
+                </div>
+                <div class="input-groups-row">
+                  <div class="input-group">
+                    <label class="input-group__label" for="debit-debt-input">Дебиторская задолженность</label>
+                    <input class="form-control" type="number" min="0" id="debit-debt-input" name="debit_debt" placeholder="Введите сумму" required>
+                  </div>
+                  <div class="input-group">
+                    <label class="input-group__label" for="cash-debt-input">Займы, выданные в денежной форме</label>
+                    <input class="form-control" type="number" min="0" id="cash-debt-input" name="cash_debt" placeholder="Введите сумму" required>
+                  </div>
+                </div>
+              </section>
+              
+              <section class="form__section">
+                <h3 class="form__section-heading h2--small">Инвестиции вашего бизнеса</h3>
+                <div class="input-group">
+                  <label class="input-group__label" for="investments-input">Инвестиции, сделанные вашим бизнесом</label>
+                  <input class="form-control" type="number" min="0" id="investments-input" name="investments" placeholder="Введите сумму" required>
+                </div>
+              </section>
+              
+              <section class="form__section">
+                <h3 class="form__section-heading h2--small">Долги бизнеса - кредиторская задолженность</h3>
+                <div class="form__section-description">
+                  <p>Некоторые долги уменьшают сумму, облагаемую закятом. Вычитаются только задолженности с наступившим сроком платежа или подлежащие выплате в течение 12 месяцев, включая долги перед поставщиками, банками, по налогам и зарплатам. Если долг превышает год, учитывается только часть на ближайшие 12 месяцев. Процентные платежи не уменьшают базу закята — только основная сумма долга.</p>
+                </div>
+                <div class="input-group">
+                  <label class="input-group__label" for="goods-rawm-debts-input">Задолженность по товарам, сырью и услугам</label>
+                  <input class="form-control" type="number" min="0" id="goods-rawm-debts-input" name="goods_rawm_debts" placeholder="Введите сумму" required>
+                </div>
+                <div class="input-group">
+                  <label class="input-group__label" for="debt-investments-input">Долги, финансирование и привлеченные инвестиции</label>
+                  <input class="form-control" type="number" min="0" id="debt-investments-input" name="debt_investments" placeholder="Введите сумму" required>
+                </div>
+                <div class="input-group">
+                  <label class="input-group__label" for="tax-debts-input">Задолженность по налогам и обязательным платежам</label>
+                  <input class="form-control" type="number" min="0" id="tax-debts-input" name="tax_debts" placeholder="Введите сумму" required>
+                </div>
+                <div class="input-group">
+                  <label class="input-group__label" for="payroll-debts-input">Задолженность по зарплате и другим видам выплат сотрудникам</label>
+                  <input class="form-control" type="number" min="0" id="payroll-debts-input" name="payroll_debts" placeholder="Введите сумму" required>
+                </div>
+              </section>
+            </form>
+          </div>
+          
+        </div>
       </div>
     </div>
     

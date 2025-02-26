@@ -336,6 +336,7 @@ input {
 .h2--small {
   font-size: 18px;
   line-height: 1.3;
+  font-weight: 600;
 }
 .index-paragraph {
   font-weight: 300;
@@ -374,9 +375,18 @@ input {
 .form--big-gap {
   gap: 24px;
 }
+.form__section {
+  display: grid;
+  gap: 16px;
+}
 .input-group {
   display: grid;
   gap: 8px;
+}
+.input-groups-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 .input-group__label {
   font-size: 14px;
@@ -447,6 +457,75 @@ input {
   background-position: center center;
   background-size: 16px 16px;
   background-repeat: no-repeat;
+}
+.tabs {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: #fff;
+}
+.tabs__inner {
+  position: relative;
+  display: flex;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+.tabs__list {
+  flex-grow: 1;
+  display: flex;
+}
+.tabs__list-item {
+  flex-grow: 1;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  transition-property: color, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+.tabs__list-item:not(.tabs__list-item--active):hover {
+  color: var(--primary-color);
+}
+.tabs__list-item--active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.tabs__list-item:active {
+  opacity: 0.6;
+}
+.tabs__new-tab-button {
+  flex-grow: 1;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.tabs__new-tab-button:hover {
+  color: var(--primary-color);
+}
+.tabs__new-tab-button:active {
+  opacity: 0.6;
+}
+.tabs__new-tab-button-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+}
+.tabs--many .tabs__new-tab-button-text {
+  display: none;
+}
+.tabs__new-tab-button-img {
+  display: none;
+}
+.tabs--many .tabs__new-tab-button-img {
+  display: block;
+}
+.businesses-info-wrapper {
+  display: grid;
+  gap: 16px;
 }
 .primary-button {
   display: block;
