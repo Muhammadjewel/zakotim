@@ -367,19 +367,32 @@ input {
   display: grid;
   gap: 16px;
 }
+.form--big-gap {
+  gap: 24px;
+}
 .input-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  gap: 8px;
 }
 .input-group__label {
-  margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.5;
 }
 .input-group__label--big {
   font-size: 16px;
   line-height: 1.5;
+}
+.input-group__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.input-group__strong {
+  font-size: 22px;
+  line-height: 1.27;
+  font-weight: 600;
 }
 .form-control {
   width: 100%;
@@ -451,6 +464,20 @@ input {
 }
 .text-primary {
   color: var(--primary-color);
+}
+.footer {
+  display: grid;
+  gap: 16px;
+}
+.footer__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footer__bold {
+  font-size: 24px;
+  line-height: 1.16;
+  font-weight: 600;
 }
 .modal {
   display: none;

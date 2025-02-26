@@ -33,28 +33,24 @@
       <h2 class="h2">Серебро и золото</h2>
       <p>Введите вес вашего золота и серебра в граммах.</p>
       
-      <form class="form">
+      <form class="form form--big-gap">
         <div class="input-group">
           <label class="input-group__label" for="silver-input"><strong>Серебро</strong> (грамм)</label>
           <input class="form-control" type="number" min="0" id="silver-input" name="silver" placeholder="Введите вес" required>
-          <div>
-            <div>
-              <span>Цена за 1 грамм серебра</span>
-              <span>9 750 сум</span>
-            </div>
-            <div>0 сум</div>
+          <div class="input-group__footer">
+            <span>Цена за 1 грамм серебра</span>
+            <span>9 750 сум</span>
           </div>
+          <div class="input-group__strong">0 сум</div>
         </div>
         <div class="input-group">
           <label class="input-group__label" for="gold-input"><strong>Золото</strong> (грамм)</label>
           <input class="form-control" type="number" min="0" id="gold-input" name="gold" placeholder="Введите вес" required>
-          <div>
-            <div>
-              <span>Цена за 1 грамм золота</span>
-              <span>470 588 с</span>
-            </div>ум
-            <div>0 сум</div>
+          <div class="input-group__footer">
+            <span>Цена за 1 грамм золота</span>
+            <span>470 588 сум</span>
           </div>
+          <div class="input-group__strong">0 сум</div>
         </div>
       </form>
     </div>
@@ -63,10 +59,10 @@
     
     
     <!-- FOOTER -->
-    <footer>
-      <div class="footer-summary">
+    <footer class="footer">
+      <div class="footer__summary">
         <div>Общая сумма</div>
-        <strong class="text-primary">0 сум</strong>
+        <strong class="footer__bold text-primary">0 сум</strong>
       </div>
       <a class="primary-button" href="06.html">Продолжить</a>
     </footer>
