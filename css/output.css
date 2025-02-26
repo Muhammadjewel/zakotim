@@ -9,10 +9,6 @@
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-semibold: 600;
@@ -206,14 +202,6 @@
   }
   .py-\[16px\] {
     padding-block: 16px;
-  }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
   .text-5xl {
     font-size: var(--text-5xl);
@@ -574,7 +562,7 @@ input {
 }
 .primary-button {
   display: block;
-  padding: 12px;
+  padding: 12px 24px;
   border-radius: 8px;
   background-color: var(--primary-color);
   color: #fff;
@@ -584,6 +572,9 @@ input {
   text-align: center;
   transition: opacity 0.3s ease;
 }
+.primary-button--inline {
+  display: inline-block;
+}
 .primary-button:hover {
   opacity: 0.8;
 }
@@ -592,6 +583,27 @@ input {
 }
 .text-primary {
   color: var(--primary-color);
+}
+.image-gallery__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.image-gallery__item {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.image-gallery__title {
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.image-gallery__img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
 .footer {
   display: grid;
