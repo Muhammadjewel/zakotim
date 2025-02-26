@@ -340,6 +340,29 @@ input {
 .index-paragraph strong {
   font-weight: 600;
 }
+.dotted-dl {
+  display: grid;
+  gap: 16px;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.dotted-dl__item {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.dotted-dl__item::after {
+  content: '';
+  flex-grow: 1;
+  border-bottom: 1px dashed #76787A;
+}
+.dotted-dl dd {
+  order: 1;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
 .form {
   display: grid;
   gap: 16px;
