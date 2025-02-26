@@ -1,124 +1,125 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/output.css">
-  </head>
-  <body class="flex flex-col">
-    
-    <!-- CONTENT-WRAPPER -->
-    <div class="content-wrapper grow flex flex-col">
-      <!-- HEADER -->
-      <header class="header header--index">
-        <div class="header__inner flex items-center">
-          <button class="header__button-close" type="button">
-            <span class="sr-only">Закрыть</span>
-            <img src="img/x.svg" alt="" width="32" height="32">
-          </button>
-          <button class="header__button-back" type="button">
-            <span class="sr-only">Назад</span>
-            <img src="img/back.svg" alt="" width="32" height="32">
-          </button>
-          <button class="button-menu ml-auto" type="button">
-            <span class="sr-only">Меню</span>
-            <img src="img/menu-burger.svg" alt="" width="32" height="32">
-          </button>
-        </div>
-      </header>
-
-      <!-- PAGE-CONTENT -->
-      <div class="grow py-[16px]">
-        <h2>
-          Выберите год, за который рассчитываете закят
-          <button type="button">
-            <span class="sr-only">Информация</span>
-            <img src="img/question.svg" alt="" width="20" height="20">
-          </button>
-        </h2>
-
-        <form>
-          <div class="input-group">
-            <label class="input-group__label input-group__label--big" for="year-select">Выберите год</label>
-            <select class="form-control" name="year" id="year-select">
-              <option value="2020">2020 год</option>
-              <option value="2021">2021 год</option>
-              <option value="2022">2022 год</option>
-              <option value="2023">2023 год</option>
-              <option value="2024">2024 год</option>
-              <option value="2025">2025 год</option>
-            </select>
-          </div>
-
-          <div class="input-group">
-            <label class="input-group__label input-group__label--big" for="currency-select">Выберите денежную единицу (валюту)</label>
-            <select class="form-control" name="currency" id="currency-select">
-              <option value="uzs">Узбекский сум</option>
-              <option value="usd">Доллары США</option>
-            </select>
-          </div>
-
-          <dl>
-            <dt>Размер нисаба</dt>
-            <dd>40 000 000 сум</dd>
-    
-            <dt>Размер нисаба (доллар США)</dt>
-            <dd>3 213.17 $</dd>
-    
-            <dt>Стоимость 1 грамма золота</dt>
-            <dd>470 588 сум</dd>
-    
-            <dt>Стоимость 1 грамма серебра</dt>
-            <dd>9 750 сум</dd>
-    
-            <dt>Курс доллара США</dt>
-            <dd>12 920.48 сум</dd>
-          </dl>
-        </form>
-      </div>
-
-      <!-- FOOTER -->
-      <footer>
-        <a class="primary-button" href="03.html">Продолжить</a>
-      </footer>
-    </div>
-
-    <!-- INFO-MODAL -->
-    <div class="modal">
-      <div class="modal-content">
-        <div>
-          <p>Обязанность выплаты закята наступает через лунный год после первого превышения суммы нисаба.</p>
-          <p>Например, если ваше имущество превысило нисаб 25 января 2023 года, то через 354 дня, 14 января 2024 года, нужно снова оценить его. Если оно снова превышает нисаб, вы становитесь плательщиком закята на весь год.</p>
-          <p>Важно, что закят рассчитывается не с момента получения доходов или активов, а по состоянию на начало (25.01.2023) и конец года закята (14.01.2024), если имущество превышает нисаб.</p>
-        </div>
-        <button type="button">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="flex flex-col">
+  
+  <!-- CONTENT-WRAPPER -->
+  <div class="content-wrapper grow flex flex-col">
+    <!-- HEADER -->
+    <header class="header header--index">
+      <div class="header__inner flex items-center">
+        <button class="header__button-close" type="button">
           <span class="sr-only">Закрыть</span>
-          <img src="img/x.svg" alt="" width="24" height="24">
+          <img src="img/x.svg" alt="" width="32" height="32">
         </button>
-        <button type="button">Понятно</button>
+        <button class="header__button-back" type="button">
+          <span class="sr-only">Назад</span>
+          <img src="img/back.svg" alt="" width="32" height="32">
+        </button>
+        <button class="button-menu ml-auto" type="button">
+          <span class="sr-only">Меню</span>
+          <img src="img/menu-burger.svg" alt="" width="32" height="32">
+        </button>
       </div>
-    </div>
-
-
-    <!-- SLIDE-UP-MENU -->
-    <div class="slide-up-menu">
-      <div class="slide-up-menu-content">
-        <img src="img/zakotim-logo.svg" alt="" width="127" height="40">
-        <div>
-          <ul>
-            <li><a href="#">О проекте</a></li>
-            <li><a href="#">Статьи</a></li>
-            <li><a href="#">Полезные ссылки</a></li>
-            <li><a href="#">Часто задаваемые вопросы</a></li>
-            <li><a href="#">Присоединиться к проекту</a></li>
-          </ul>
-          <button type="button">Отправить вопрос</button>
+    </header>
+    
+    <!-- PAGE-CONTENT -->
+    <div class="grow py-[16px]">
+      <h2>
+        Выберите год, за который рассчитываете закят
+        <button type="button">
+          <span class="sr-only">Информация</span>
+          <img src="img/question.svg" alt="" width="20" height="20">
+        </button>
+      </h2>
+      
+      <form>
+        <div class="input-group">
+          <label class="input-group__label input-group__label--big" for="year-select">Выберите год</label>
+          <select class="form-control" name="year" id="year-select">
+            <option value="2020">2020 год</option>
+            <option value="2021">2021 год</option>
+            <option value="2022">2022 год</option>
+            <option value="2023">2023 год</option>
+            <option value="2024">2024 год</option>
+            <option value="2025">2025 год</option>
+          </select>
         </div>
+        
+        <div class="input-group">
+          <label class="input-group__label input-group__label--big" for="currency-select">Выберите денежную единицу (валюту)</label>
+          <select class="form-control" name="currency" id="currency-select">
+            <option value="uzs">Узбекский сум</option>
+            <option value="usd">Доллары США</option>
+          </select>
+        </div>
+        
+        <dl>
+          <dt>Размер нисаба</dt>
+          <dd>40 000 000 сум</dd>
+          
+          <dt>Размер нисаба (доллар США)</dt>
+          <dd>3 213.17 $</dd>
+          
+          <dt>Стоимость 1 грамма золота</dt>
+          <dd>470 588 сум</dd>
+          
+          <dt>Стоимость 1 грамма серебра</dt>
+          <dd>9 750 сум</dd>
+          
+          <dt>Курс доллара США</dt>
+          <dd>12 920.48 сум</dd>
+        </dl>
+      </form>
+    </div>
+    
+    <!-- FOOTER -->
+    <footer>
+      <a class="primary-button" href="03.html">Продолжить</a>
+    </footer>
+  </div>
+  
+  <!-- INFO-MODAL -->
+  <div class="modal">
+    <div class="modal-content">
+      <div>
+        <p>Обязанность выплаты закята наступает через лунный год после первого превышения суммы нисаба.</p>
+        <p>Например, если ваше имущество превысило нисаб 25 января 2023 года, то через 354 дня, 14 января 2024 года, нужно снова оценить его. Если оно снова превышает нисаб, вы становитесь плательщиком закята на весь год.</p>
+        <p>Важно, что закят рассчитывается не с момента получения доходов или активов, а по состоянию на начало (25.01.2023) и конец года закята (14.01.2024), если имущество превышает нисаб.</p>
+      </div>
+      <button type="button">
+        <span class="sr-only">Закрыть</span>
+        <img src="img/x.svg" alt="" width="24" height="24">
+      </button>
+      <button type="button">Понятно</button>
+    </div>
+  </div>
+  
+  
+  <!-- SLIDE-UP-MENU -->
+  <div class="slide-up-menu">
+    <div class="slide-up-menu__content">
+      <div class="slide-up-menu__inner">
+        <img src="img/zakotim-logo.svg" alt="" width="127" height="40">
+        <ul class="card-links">
+          <li><a class="card-links__link" href="#">О проекте</a></li>
+          <li><a class="card-links__link" href="#">Статьи</a></li>
+          <li><a class="card-links__link" href="#">Полезные ссылки</a></li>
+          <li><a class="card-links__link" href="#">Часто задаваемые вопросы</a></li>
+          <li><a class="card-links__link" href="#">Присоединиться к проекту</a></li>
+        </ul>
+        <button class="primary-button" type="button">Отправить вопрос</button>
       </div>
     </div>
-
-    <div class="slide-up-menu">
-      <div class="slide-up-menu-content">
+  </div>
+  
+  <div class="slide-up-menu">
+    <div class="slide-up-menu__content">
+      <div class="slide-up-menu__inner">
         <h2>Присоединиться к проекту</h2>
         <form>
           <div class="input-group">
@@ -133,6 +134,7 @@
         </form>
       </div>
     </div>
-      
-  </body>
+  </div>
+  
+</body>
 </html>

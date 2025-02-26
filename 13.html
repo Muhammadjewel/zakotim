@@ -1,102 +1,103 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/output.css">
-  </head>
-  <body class="flex flex-col">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="flex flex-col">
+  
+  <!-- CONTENT-WRAPPER -->
+  <div class="content-wrapper grow flex flex-col">
+    <!-- HEADER -->
+    <header class="header header--inner">
+      <div class="header__inner flex items-center">
+        <button class="header__button-close" type="button">
+          <span class="sr-only">Закрыть</span>
+          <img src="img/x.svg" alt="" width="32" height="32">
+        </button>
+        <button class="header__button-back" type="button">
+          <span class="sr-only">Назад</span>
+          <img src="img/back.svg" alt="" width="32" height="32">
+        </button>
+        <button class="button-menu ml-auto" type="button">
+          <span class="sr-only">Меню</span>
+          <img src="img/menu-burger.svg" alt="" width="32" height="32">
+        </button>
+      </div>
+    </header>
     
-    <!-- CONTENT-WRAPPER -->
-    <div class="content-wrapper grow flex flex-col">
-      <!-- HEADER -->
-      <header class="header header--inner">
-        <div class="header__inner flex items-center">
-          <button class="header__button-close" type="button">
-            <span class="sr-only">Закрыть</span>
-            <img src="img/x.svg" alt="" width="32" height="32">
-          </button>
-          <button class="header__button-back" type="button">
-            <span class="sr-only">Назад</span>
-            <img src="img/back.svg" alt="" width="32" height="32">
-          </button>
-          <button class="button-menu ml-auto" type="button">
-            <span class="sr-only">Меню</span>
-            <img src="img/menu-burger.svg" alt="" width="32" height="32">
-          </button>
-        </div>
-      </header>
-
-      <!-- PAGE-CONTENT -->
-      <div class="grow py-[16px]">
-        <h2>
-          Итоговый расчет
-        </h2>
-        
-        <section>
-          <h2>Имущество, подлежащее закяту</h2>
-          <dl>
-            <dt>Золото и серебро </dt>
-            <dd>10 000 000 сум</dd>
-            <dt>Денежные средства – личные</dt>
-            <dd>50 000 000 сум</dd>
-            <dt>Личные долги данные третьим лицам</dt>
-            <dd>5 000 000 сум</dd>
-            <dt>Акции и инвестиции</dt>
-            <dd>15 000 000 сум</dd>
-          </dl>
-        </section>
-
-        <section>
-          <h2>Формула расчета закята:</h2>
-          <p>(“Мое состояние” − “Мои долги”)×2.5%</p>
-        </section>
-
-        <section>
-          <h2>Общая сумма для расчета закята</h2>
-          <dl>
-            <dt>Общая сумма состояния, подлежащего закяту:</dt>
-            <dd>80 000 000 сум</dd>
-            <dt>Общая сумма долгов, подлежащих вычету:</dt>
-            <dd>10 000 000 сум</dd>
-            <dt>Чистая сумма состояния для расчета закята</dt>
-            <dd>70 000 000 сум</dd>
-          </dl>
-        </section>
-
-        <section>
-          <h2>Сумма закята</h2>
-          <p>Ваше богатство не достигло суммы нисаба, в настоящее время сумма нисаба составляет:</p>
-          <strong>1 750 000 сум</strong>
-        </section>
-      </div>
-
-      <!-- FOOTER -->
-      <footer>
-        <button>Поддержать нуждающихся</button>
-      </footer>
+    <!-- PAGE-CONTENT -->
+    <div class="grow py-[16px]">
+      <h2>
+        Итоговый расчет
+      </h2>
+      
+      <section>
+        <h2>Имущество, подлежащее закяту</h2>
+        <dl>
+          <dt>Золото и серебро </dt>
+          <dd>10 000 000 сум</dd>
+          <dt>Денежные средства – личные</dt>
+          <dd>50 000 000 сум</dd>
+          <dt>Личные долги данные третьим лицам</dt>
+          <dd>5 000 000 сум</dd>
+          <dt>Акции и инвестиции</dt>
+          <dd>15 000 000 сум</dd>
+        </dl>
+      </section>
+      
+      <section>
+        <h2>Формула расчета закята:</h2>
+        <p>(“Мое состояние” − “Мои долги”)×2.5%</p>
+      </section>
+      
+      <section>
+        <h2>Общая сумма для расчета закята</h2>
+        <dl>
+          <dt>Общая сумма состояния, подлежащего закяту:</dt>
+          <dd>80 000 000 сум</dd>
+          <dt>Общая сумма долгов, подлежащих вычету:</dt>
+          <dd>10 000 000 сум</dd>
+          <dt>Чистая сумма состояния для расчета закята</dt>
+          <dd>70 000 000 сум</dd>
+        </dl>
+      </section>
+      
+      <section>
+        <h2>Сумма закята</h2>
+        <p>Ваше богатство не достигло суммы нисаба, в настоящее время сумма нисаба составляет:</p>
+        <strong>1 750 000 сум</strong>
+      </section>
     </div>
-
-
-    <!-- SLIDE-UP-MENU -->
-    <div class="slide-up-menu">
-      <div class="slide-up-menu-content">
+    
+    <!-- FOOTER -->
+    <footer>
+      <button>Поддержать нуждающихся</button>
+    </footer>
+  </div>
+  
+  
+  <!-- SLIDE-UP-MENU -->
+  <div class="slide-up-menu">
+    <div class="slide-up-menu__content">
+      <div class="slide-up-menu__inner">
         <img src="img/zakotim-logo.svg" alt="" width="127" height="40">
-        <div>
-          <ul>
-            <li><a href="#">О проекте</a></li>
-            <li><a href="#">Статьи</a></li>
-            <li><a href="#">Полезные ссылки</a></li>
-            <li><a href="#">Часто задаваемые вопросы</a></li>
-            <li><a href="#">Присоединиться к проекту</a></li>
-          </ul>
-          <button type="button">Отправить вопрос</button>
-        </div>
+        <ul class="card-links">
+          <li><a class="card-links__link" href="#">О проекте</a></li>
+          <li><a class="card-links__link" href="#">Статьи</a></li>
+          <li><a class="card-links__link" href="#">Полезные ссылки</a></li>
+          <li><a class="card-links__link" href="#">Часто задаваемые вопросы</a></li>
+          <li><a class="card-links__link" href="#">Присоединиться к проекту</a></li>
+        </ul>
+        <button class="primary-button" type="button">Отправить вопрос</button>
       </div>
     </div>
-
-    <div class="slide-up-menu">
-      <div class="slide-up-menu-content">
+  </div>
+  
+  <div class="slide-up-menu">
+    <div class="slide-up-menu__content">
+      <div class="slide-up-menu__inner">
         <h2>Присоединиться к проекту</h2>
         <form>
           <div class="input-group">
@@ -111,7 +112,8 @@
         </form>
       </div>
     </div>
-
-      
-  </body>
+  </div>
+  
+  
+</body>
 </html>

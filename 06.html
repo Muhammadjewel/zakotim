@@ -1,105 +1,106 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/output.css">
-  </head>
-  <body class="flex flex-col">
-    
-    <!-- CONTENT-WRAPPER -->
-    <div class="content-wrapper grow flex flex-col">
-      <!-- HEADER -->
-      <header class="header header--inner">
-        <div class="header__inner flex items-center">
-          <button class="header__button-close" type="button">
-            <span class="sr-only">Закрыть</span>
-            <img src="img/x.svg" alt="" width="32" height="32">
-          </button>
-          <button class="header__button-back" type="button">
-            <span class="sr-only">Назад</span>
-            <img src="img/back.svg" alt="" width="32" height="32">
-          </button>
-          <button class="button-menu ml-auto" type="button">
-            <span class="sr-only">Меню</span>
-            <img src="img/menu-burger.svg" alt="" width="32" height="32">
-          </button>
-        </div>
-      </header>
-
-      <!-- PAGE-CONTENT -->
-      <div class="grow py-[16px]">
-        <h2>
-          Долги и дебиторская задолженность
-          <button type="button">
-            <span class="sr-only">Информация</span>
-            <img src="img/question.svg" alt="" width="20" height="20">
-          </button>
-        </h2>
-        <p>Выданные другим долги (дебиторская задолженность) облагаются закятом, включая денежные займы и задолженность за проданные товары.</p>
-
-        <form>
-          <div class="input-group">
-            <label class="input-group__label" for="cash-input">Займы, выданные в денежной форме</label>
-            <input class="form-control" type="number" min="0" id="cash-input" name="cash" placeholder="Введите сумму" required>
-          </div>
-          <div class="input-group">
-            <label class="input-group__label" for="commercial-debts-input">Коммерческие долги</label>
-            <input class="form-control" type="number" min="0" id="commercial-debts-input" name="commercial-debts" placeholder="Введите сумму" required>
-          </div>
-          <div class="input-group">
-            <label class="input-group__label" for="overdue-debts-input">Просроченные и/или сомнительные долги</label>
-            <input class="form-control" type="number" min="0" id="overdue-debts-input" name="overdue-debts" placeholder="Введите сумму" required>
-          </div>
-        </form>
-      </div>
-
-      <!-- FOOTER -->
-      <footer>
-        <div class="footer-summary">
-          <div>Общая сумма</div>
-          <strong class="text-primary">0 сум</strong>
-        </div>
-        <a class="primary-button" href="07.html">Продолжить</a>
-      </footer>
-    </div>
-
-    <!-- INFO-MODAL -->
-    <div class="modal">
-      <div class="modal-content">
-        <div>
-          <p>Личные долги указывайте здесь, бизнес-задолженность — в разделе «Бизнес».</p>
-          <p>Если должник платежеспособен, закят выплачивается ежегодно. Если у него трудности, можно платить ежегодно с долга или после возврата — за прошедшие годы.</p>
-          <p>Если долг безнадежен или заемщик его отрицает без доказательств, закят не выплачивается. Если долг возвращен, закят начисляется только за год получения.Закят взимается с долгов за проданные товары и услуги, но не с долгов за личные вещи и аренду.</p>
-        </div>
-        <button type="button">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="flex flex-col">
+  
+  <!-- CONTENT-WRAPPER -->
+  <div class="content-wrapper grow flex flex-col">
+    <!-- HEADER -->
+    <header class="header header--inner">
+      <div class="header__inner flex items-center">
+        <button class="header__button-close" type="button">
           <span class="sr-only">Закрыть</span>
-          <img src="img/x.svg" alt="" width="24" height="24">
+          <img src="img/x.svg" alt="" width="32" height="32">
         </button>
-        <button type="button">Понятно</button>
+        <button class="header__button-back" type="button">
+          <span class="sr-only">Назад</span>
+          <img src="img/back.svg" alt="" width="32" height="32">
+        </button>
+        <button class="button-menu ml-auto" type="button">
+          <span class="sr-only">Меню</span>
+          <img src="img/menu-burger.svg" alt="" width="32" height="32">
+        </button>
       </div>
-    </div>
-
-
-    <!-- SLIDE-UP-MENU -->
-    <div class="slide-up-menu">
-      <div class="slide-up-menu-content">
-        <img src="img/zakotim-logo.svg" alt="" width="127" height="40">
-        <div>
-          <ul>
-            <li><a href="#">О проекте</a></li>
-            <li><a href="#">Статьи</a></li>
-            <li><a href="#">Полезные ссылки</a></li>
-            <li><a href="#">Часто задаваемые вопросы</a></li>
-            <li><a href="#">Присоединиться к проекту</a></li>
-          </ul>
-          <button type="button">Отправить вопрос</button>
+    </header>
+    
+    <!-- PAGE-CONTENT -->
+    <div class="grow py-[16px]">
+      <h2>
+        Долги и дебиторская задолженность
+        <button type="button">
+          <span class="sr-only">Информация</span>
+          <img src="img/question.svg" alt="" width="20" height="20">
+        </button>
+      </h2>
+      <p>Выданные другим долги (дебиторская задолженность) облагаются закятом, включая денежные займы и задолженность за проданные товары.</p>
+      
+      <form>
+        <div class="input-group">
+          <label class="input-group__label" for="cash-input">Займы, выданные в денежной форме</label>
+          <input class="form-control" type="number" min="0" id="cash-input" name="cash" placeholder="Введите сумму" required>
         </div>
+        <div class="input-group">
+          <label class="input-group__label" for="commercial-debts-input">Коммерческие долги</label>
+          <input class="form-control" type="number" min="0" id="commercial-debts-input" name="commercial-debts" placeholder="Введите сумму" required>
+        </div>
+        <div class="input-group">
+          <label class="input-group__label" for="overdue-debts-input">Просроченные и/или сомнительные долги</label>
+          <input class="form-control" type="number" min="0" id="overdue-debts-input" name="overdue-debts" placeholder="Введите сумму" required>
+        </div>
+      </form>
+    </div>
+    
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-summary">
+        <div>Общая сумма</div>
+        <strong class="text-primary">0 сум</strong>
+      </div>
+      <a class="primary-button" href="07.html">Продолжить</a>
+    </footer>
+  </div>
+  
+  <!-- INFO-MODAL -->
+  <div class="modal">
+    <div class="modal-content">
+      <div>
+        <p>Личные долги указывайте здесь, бизнес-задолженность — в разделе «Бизнес».</p>
+        <p>Если должник платежеспособен, закят выплачивается ежегодно. Если у него трудности, можно платить ежегодно с долга или после возврата — за прошедшие годы.</p>
+        <p>Если долг безнадежен или заемщик его отрицает без доказательств, закят не выплачивается. Если долг возвращен, закят начисляется только за год получения.Закят взимается с долгов за проданные товары и услуги, но не с долгов за личные вещи и аренду.</p>
+      </div>
+      <button type="button">
+        <span class="sr-only">Закрыть</span>
+        <img src="img/x.svg" alt="" width="24" height="24">
+      </button>
+      <button type="button">Понятно</button>
+    </div>
+  </div>
+  
+  
+  <!-- SLIDE-UP-MENU -->
+  <div class="slide-up-menu">
+    <div class="slide-up-menu__content">
+      <div class="slide-up-menu__inner">
+        <img src="img/zakotim-logo.svg" alt="" width="127" height="40">
+        <ul class="card-links">
+          <li><a class="card-links__link" href="#">О проекте</a></li>
+          <li><a class="card-links__link" href="#">Статьи</a></li>
+          <li><a class="card-links__link" href="#">Полезные ссылки</a></li>
+          <li><a class="card-links__link" href="#">Часто задаваемые вопросы</a></li>
+          <li><a class="card-links__link" href="#">Присоединиться к проекту</a></li>
+        </ul>
+        <button class="primary-button" type="button">Отправить вопрос</button>
       </div>
     </div>
-
-    <div class="slide-up-menu">
-      <div class="slide-up-menu-content">
+  </div>
+  
+  <div class="slide-up-menu">
+    <div class="slide-up-menu__content">
+      <div class="slide-up-menu__inner">
         <h2>Присоединиться к проекту</h2>
         <form>
           <div class="input-group">
@@ -114,6 +115,7 @@
         </form>
       </div>
     </div>
-      
-  </body>
+  </div>
+  
+</body>
 </html>

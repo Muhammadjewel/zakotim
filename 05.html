@@ -1,96 +1,97 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/output.css">
-  </head>
-  <body class="flex flex-col">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="flex flex-col">
+  
+  <!-- CONTENT-WRAPPER -->
+  <div class="content-wrapper grow flex flex-col">
+    <!-- HEADER -->
+    <header class="header header--inner">
+      <div class="header__inner flex items-center">
+        <button class="header__button-close" type="button">
+          <span class="sr-only">Закрыть</span>
+          <img src="img/x.svg" alt="" width="32" height="32">
+        </button>
+        <button class="header__button-back" type="button">
+          <span class="sr-only">Назад</span>
+          <img src="img/back.svg" alt="" width="32" height="32">
+        </button>
+        <button class="button-menu ml-auto" type="button">
+          <span class="sr-only">Меню</span>
+          <img src="img/menu-burger.svg" alt="" width="32" height="32">
+        </button>
+      </div>
+    </header>
     
-    <!-- CONTENT-WRAPPER -->
-    <div class="content-wrapper grow flex flex-col">
-      <!-- HEADER -->
-      <header class="header header--inner">
-        <div class="header__inner flex items-center">
-          <button class="header__button-close" type="button">
-            <span class="sr-only">Закрыть</span>
-            <img src="img/x.svg" alt="" width="32" height="32">
-          </button>
-          <button class="header__button-back" type="button">
-            <span class="sr-only">Назад</span>
-            <img src="img/back.svg" alt="" width="32" height="32">
-          </button>
-          <button class="button-menu ml-auto" type="button">
-            <span class="sr-only">Меню</span>
-            <img src="img/menu-burger.svg" alt="" width="32" height="32">
-          </button>
-        </div>
-      </header>
-
-      <!-- PAGE-CONTENT -->
-      <div class="grow py-[16px]">
-        <h2>Серебро и золото</h2>
-        <p>Введите вес вашего золота и серебра в граммах.</p>
-
-        <form>
-          <div class="input-group">
-            <label class="input-group__label" for="silver-input"><strong>Серебро</strong> (грамм)</label>
-            <input class="form-control" type="number" min="0" id="silver-input" name="silver" placeholder="Введите вес" required>
-            <div>
-              <div>
-                <span>Цена за 1 грамм серебра</span>
-                <span>9 750 сум</span>
-              </div>
-              <div>0 сум</div>
-            </div>
-          </div>
-          <div class="input-group">
-            <label class="input-group__label" for="gold-input"><strong>Золото</strong> (грамм)</label>
-            <input class="form-control" type="number" min="0" id="gold-input" name="gold" placeholder="Введите вес" required>
-            <div>
-              <div>
-                <span>Цена за 1 грамм золота</span>
-                <span>470 588 с</span>
-              </div>ум
-              <div>0 сум</div>
-            </div>
-          </div>
-        </form>
-      </div>
+    <!-- PAGE-CONTENT -->
+    <div class="grow py-[16px]">
+      <h2>Серебро и золото</h2>
+      <p>Введите вес вашего золота и серебра в граммах.</p>
       
-
-
-
-      <!-- FOOTER -->
-      <footer>
-        <div class="footer-summary">
-          <div>Общая сумма</div>
-          <strong class="text-primary">0 сум</strong>
+      <form>
+        <div class="input-group">
+          <label class="input-group__label" for="silver-input"><strong>Серебро</strong> (грамм)</label>
+          <input class="form-control" type="number" min="0" id="silver-input" name="silver" placeholder="Введите вес" required>
+          <div>
+            <div>
+              <span>Цена за 1 грамм серебра</span>
+              <span>9 750 сум</span>
+            </div>
+            <div>0 сум</div>
+          </div>
         </div>
-        <a class="primary-button" href="06.html">Продолжить</a>
-      </footer>
+        <div class="input-group">
+          <label class="input-group__label" for="gold-input"><strong>Золото</strong> (грамм)</label>
+          <input class="form-control" type="number" min="0" id="gold-input" name="gold" placeholder="Введите вес" required>
+          <div>
+            <div>
+              <span>Цена за 1 грамм золота</span>
+              <span>470 588 с</span>
+            </div>ум
+            <div>0 сум</div>
+          </div>
+        </div>
+      </form>
     </div>
-
-
-    <!-- SLIDE-UP-MENU -->
-    <div class="slide-up-menu">
-      <div class="slide-up-menu-content">
+    
+    
+    
+    
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-summary">
+        <div>Общая сумма</div>
+        <strong class="text-primary">0 сум</strong>
+      </div>
+      <a class="primary-button" href="06.html">Продолжить</a>
+    </footer>
+  </div>
+  
+  
+  <!-- SLIDE-UP-MENU -->
+  <div class="slide-up-menu">
+    <div class="slide-up-menu__content">
+      <div class="slide-up-menu__inner">
         <img src="img/zakotim-logo.svg" alt="" width="127" height="40">
-        <div>
-          <ul>
-            <li><a href="#">О проекте</a></li>
-            <li><a href="#">Статьи</a></li>
-            <li><a href="#">Полезные ссылки</a></li>
-            <li><a href="#">Часто задаваемые вопросы</a></li>
-            <li><a href="#">Присоединиться к проекту</a></li>
-          </ul>
-          <button type="button">Отправить вопрос</button>
-        </div>
+        <ul class="card-links">
+          <li><a class="card-links__link" href="#">О проекте</a></li>
+          <li><a class="card-links__link" href="#">Статьи</a></li>
+          <li><a class="card-links__link" href="#">Полезные ссылки</a></li>
+          <li><a class="card-links__link" href="#">Часто задаваемые вопросы</a></li>
+          <li><a class="card-links__link" href="#">Присоединиться к проекту</a></li>
+        </ul>
+        <button class="primary-button" type="button">Отправить вопрос</button>
       </div>
     </div>
-
-    <div class="slide-up-menu">
-      <div class="slide-up-menu-content">
+  </div>
+  
+  <div class="slide-up-menu">
+    <div class="slide-up-menu__content">
+      <div class="slide-up-menu__inner">
         <h2>Присоединиться к проекту</h2>
         <form>
           <div class="input-group">
@@ -105,6 +106,7 @@
         </form>
       </div>
     </div>
-      
-  </body>
+  </div>
+  
+</body>
 </html>
